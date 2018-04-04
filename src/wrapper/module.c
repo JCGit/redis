@@ -3698,7 +3698,7 @@ void moduleReleaseGIL(void) {
 /* --------------------------------------------------------------------------
  * Module Keyspace Notifications API
  * -------------------------------------------------------------------------- */
-
+// 订阅 用于 通知
 /* Subscribe to keyspace notifications. This is a low-level version of the
  * keyspace-notifications API. A module cand register callbacks to be notified
  * when keyspce events occur.

@@ -1,5 +1,5 @@
-/* Redis Sentinel implementation
- *
+/* Redis Sentinel implementation 守护模式
+ *          哨兵
  * Copyright (c) 2009-2012, Salvatore Sanfilippo <antirez at gmail dot com>
  * All rights reserved.
  *
@@ -123,7 +123,7 @@ typedef struct sentinelAddr {
  * monitoring many masters, we have different instances representing the
  * same Sentinels, one per master, and we need to share the hiredis connections
  * among them. Oherwise if 5 Sentinels are monitoring 100 masters we create
- * 500 outgoing connections instead of 5.
+ * 500 outgoing(超过) connections instead of 5.
  *
  * So this structure represents a reference counted link in terms of the two
  * hiredis connections for commands and Pub/Sub, and the fields needed for

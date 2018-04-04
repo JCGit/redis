@@ -27,6 +27,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+/*
+* SDS: 简易动态字符串库 simple dynamic string library
+*/
+
 #include "server.h"
 #include "atomicvar.h"
 #include <sys/uio.h>

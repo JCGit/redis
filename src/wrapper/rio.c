@@ -1,7 +1,7 @@
 /* rio.c is a simple stream-oriented I/O abstraction that provides an interface
- * to write code that can consume/produce data using different concrete input
+ * to write code that can consume/produce data using different concrete(具体的) input
  * and output devices. For instance the same rdb.c code using the rio
- * abstraction can be used to read and write the RDB format using in-memory
+ * abstraction(抽象) can be used to read and write the RDB format using in-memory
  * buffers or files.
  *
  * A rio object provides the following methods:
@@ -78,7 +78,7 @@ static off_t rioBufferTell(rio *r) {
     return r->io.buffer.pos;
 }
 
-/* Flushes any buffer to target device if applicable. Returns 1 on success
+/* Flushes any buffer to target device if applicable(适用的). Returns 1 on success
  * and 0 on failures. */
 static int rioBufferFlush(rio *r) {
     UNUSED(r);

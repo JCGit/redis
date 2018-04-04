@@ -1,5 +1,5 @@
 /* Asynchronous replication implementation.
- *
+ * 异步拷贝的实现逻辑
  * Copyright (c) 2009-2012, Salvatore Sanfilippo <antirez at gmail dot com>
  * All rights reserved.
  *

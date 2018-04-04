@@ -35,6 +35,12 @@
  * the include of your alternate allocator if needed (not needed in order
  * to use the default libc allocator). */
 
+/*
+* Rax:随机存储
+* Alternate:备用的
+* radix:根，基数
+*/
+
 #ifndef RAX_ALLOC_H
 #define RAX_ALLOC_H
 #include "zmalloc.h"

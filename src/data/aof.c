@@ -46,7 +46,7 @@ void aofClosePipes(void);
 /* ----------------------------------------------------------------------------
  * AOF rewrite buffer implementation.
  *
- * The following code implement a simple buffer used in order to accumulate
+ * The following code implement a simple buffer used in order to accumulate(积累)
  * changes while the background process is rewriting the AOF file.
  *
  * We only need to append, but can't just use realloc with a large block
